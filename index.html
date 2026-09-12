@@ -51,11 +51,13 @@
     }
     .logo{ display:flex; align-items:center; gap:12px; cursor:pointer; }
     .logo-image {
-    width: 46px;
-    height: 46px;
+    width: 165px;
+    height: 60px;
     object-fit: contain;
+    object-position: left center;
     display: block;
 }
+
     .logo-text{
         font-size:24px; font-weight:700;
         background:linear-gradient(135deg,var(--primary-cyan),var(--primary-purple));
@@ -326,7 +328,6 @@
     <div class="navbar">
         <div class="logo" onclick="showPage('home', this)">
             <img src="logo.jpeg" alt="IZON AI Logo" class="logo-image">
-            <div class="logo-text">IZON AI</div>
         </div>
         <nav class="main-nav">
             <a onclick="showPage('home', this)" class="nav-link active">Home</a>
